@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lenovo.weixinshixian.MainActivity">
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#33000000"
+        android:dividerHeight="0.1dp"
+        android:overScrollMode="never" />
+
+    <com.example.lenovo.weixinshixian.QuickIndexBar
+        android:id="@+id/quickIndexBar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#B21421" />
+
+    <TextView
+        android:id="@+id/tv_center_view"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/center_view_bg"
+        android:gravity="center"
+        android:text="A"
+        android:layout_centerInParent="true"
+        android:textColor="#FFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+</RelativeLayout>
